@@ -1,0 +1,77 @@
+/********************************************Basic Reset********************************************/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+a {
+    text-decoration: none; 
+}
+a:focus{
+    outline: none;
+}
+button {
+    border: none;
+}
+button:focus{
+    outline: none;
+}
+ul {
+    list-style-type: none;
+}
+img {
+    width : 100%
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Kumbh Sans' , sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.7;
+}
+/******************************************Start of the navbar**************************************/
+.navbar{
+    height: 9rem;
+    background-color: #131313;
+    padding: 0 calc( ( 100vw - 1140px ) / 2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__logo{
+    background-color: #ff8177;
+    background-image: linear-gradient(to top,#ff0844 0%,#ffb199 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size:3rem;
+    font-weight: 600;
+}
+.navbar__menu{
+    display: flex;
+}
+.navbar__item:not(:last-child){
+    margin-right: 2rem;
+}
+.navbar__link{
+    color: white;
+}
+.navbar__link:hover{
+    color: #ff8177;
+}
+.button{
+    color: white;
+    background-color: #ff8177;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+}
+@media screen and (max-width:114rem) {
+    .navbar{
+        padding: 0 6rem;
+    }
+}
